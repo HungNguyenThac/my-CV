@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hung's CV</title>
+    <!-- Load font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Load google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Load main stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1.625;
+        font-size: 16px;
+        color: #263238;
+        font-family: "Roboto Slab", serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      img {
+        vertical-align: middle;
+        max-width: 100%;
+      }
+      p {
+        margin: 0 0 10px;
+      }
+
+      /* Helper Class */
+      .flex {
+        display: flex;
+      }
+      .flex .middle {
+        align-items: center;
+      }
+      .flex .flex--1 {
+        flex: 1;
+      }
+
+      /* Global Layout */
+      .wrapper {
+        max-width: 96%;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .sidebar {
+        width: 35%;
+        background: #37474f;
+        color: #fff;
+      }
+      .content {
+        width: 65%;
+        padding: 70px 0 70px 70px;
+      }
+
+      /* Avatar */
+      .avatar {
+        text-align: center;
+        padding: 60px 0;
+        background: #263238;
+      }
+      .avatar img {
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.1);
+      }
+      .avatar h1 {
+        font-size: 32px;
+        text-transform: uppercase;
+        margin: 25px 0 0;
+        line-height: 1;
+      }
+      .avatar h4 {
+        font-size: 22px;
+      }
+
+      /* Module */
+      .sidebar .module {
+        padding: 0 45px;
+        margin-top: 50px;
+      }
+      .sidebar .module:last-child {
+        margin-bottom: 50px;
+      }
+      .module__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .module__meta {
+        font-size: 14px;
+        color: #90a4ae;
+        margin-bottom: 20px;
+      }
+      .css-link {
+        color: black;
+        text-decoration: none;
+      }
+      .name__project {
+        text-decoration: none;
+        color: red;
+        margin-left: 24px;
+      }
+      .margin-bottom {
+        margin-bottom: 12px;
+      }
+      .name__project:hover {
+        color: red;
+      }
+      .module__meta i {
+        margin-right: 10px;
+      }
+      .module__meta span {
+        margin-right: 20px;
+      }
+      .module__content p {
+        text-align: justify;
+      }
+      .module__title .circle {
+        margin-right: 10px;
+      }
+      .circle {
+        font-size: 14px;
+        color: #fff;
+        background: #263238;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .circle.circle--large {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+      }
+      .circle.circle--medium {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+      }
+      .circle.circle--small {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .circle.circle--white {
+        background: #fff;
+        color: #263238;
+      }
+
+      /* Progress bar */
+      .progress-bar,
+      .progress-bar span {
+        height: 6px;
+        background: #fff;
+        border-radius: 6px;
+        display: block;
+      }
+      .progress-bar span {
+        background: #263238;
+      }
+      .module--progress li {
+        margin-bottom: 20px;
+      }
+
+      /* Section */
+      .section:not(.last-child) {
+        margin-bottom: 50px;
+      }
+      .section__title {
+        font-size: 28px;
+        text-transform: uppercase;
+        margin: 0 0 10px;
+      }
+      .section__content {
+        padding-left: 90px;
+      }
+      .content .module:not(:first-child) {
+        margin-top: 50px;
+      }
+      .content .module__title {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flex">
+      <div class="sidebar">
+        <div class="avatar">
+          <img
+            src="https://lh3.googleusercontent.com/k33GFu5Bt8jDqXaUi8-CUEnm1LMz8wW1CQZPd94LNtlWxQeNWU-QAhNu80B9GhUq0n8hs4KRM_QsG7Hb47swqmiGtr4wOSj7koq5tW9fF9umDksD9V2FP-DDRJd05W6z_7rUWQwc0hqUtDlLErE8C8ta-dQtMmDmgBCNoLsOt-NisvsJK6ZlBpC3jAxS1FMfNT8Cb9Hx2QiR6yOdX6Jy_Vo_IHJlZOTTVyxS_tmHes7iTP652LlIQRo-bqgf7GP-1CPq9hJWn4z3QGf92hgMXBmfrOl0PSnGqscPW3sqnb5jup2A_UVmD4EbCYPw7tg9TawynTBlbVfgybtlqGY9QpjSlgi_Mk6fkB3dUORk_NlUowi6XMaOPEJBIN1eYNGR7SSa8A6hrqQXTvWtJyKMJbfejIWkjnUM6WCOI9foltrtwowrq8wRSQNVyX6pJ90a1JOl2qW9TKdEZTgA_KXciXPIzwgT-xIlMNrn8ew-77MVhhySRo3EpojkrYMXCs_H7-6weV8OZkZZLuz1svOIT_IR0MR90-S7RtOIY97fS5w4vDLcBYw4u8MnswYPRfXBGUXqJytNcTQ3B48X-hMjwIWCd-Ua6VwqjYSzvRNPTqH_TsxeEtD3YbGSPiEEh9Wre2EdcttDpEU7Q7mJoyW-YBqTwl-gSeq8qMNhGeS5DKd4Rnc6uZH5jOrnlhdEvjeOicoTK1pzpGPNrxreCMMGMEk=w1301-h1276-no?authuser=0"
+            width="215"
+            height="215"
+            alt="Nguyễn Thạc Hưng"
+          />
+          <h1 class="name">NGUYỄN THẠC HƯNG</h1>
+          <h3 class="name">19/04/1996</h3>
+          <h4 class="job">APPLY Frontend</h4>
+        </div>
+        <!-- .avatar -->
+        <div class="module">
+          <h3 class="module__title">
+            <i class="fa fa-user circle circle--medium"></i>
+            <span>ABOUT ME</span>
+          </h3>
+          <div class="module__content">
+            <p>
+              Tôi được đánh giá là một người thành thật, vui vẻ, hòa đồng, nhiệt
+              tình, năng động và có trách nhiệm trong công việc.
+            </p>
+            <p>
+              Sở thích của Tôi thiên về các môn thể thao như: Bơi lội, đá cầu,
+              cầu lông,... Bên cạnh đó, Tôi cũng có sở thích về đọc truyện chữ
+              và truyện tranh (truyện tiên hiệp).
+            </p>
+          </div>
+        </div>
+        <!-- End .module #1 -->
+
+        <div class="module">
+          <h3 class="module__title">
+            <i class="fas fa-address-book circle circle--medium"></i>
+            <span>Contact Me</span>
+          </h3>
+          <div class="module__content">
+            <ul>
+              <li class="flex margin-bottom">
+                <i
+                  class="fa fa-map-marker circle circle--small circle--white"
+                ></i>
+                <div>Đình Xuyên - Gia Lâm - Hà Nội.</div>
+              </li>
+              <li class="flex margin-bottom">
+                <i
+                  class="fa fa-envelope circle circle--small circle--white"
+                ></i>
+                <div>nthachung@gmail.com</div>
+              </li>
+              <li class="flex margin-bottom">
+                <i
+                  class="fab fa-facebook circle circle--small circle--white"
+                ></i>
+                <div>https://www.facebook.com<br />/HgNguyen19.4.96/</div>
+              </li>
+              <li class="flex margin-bottom">
+                <i class="fab fa-github circle circle--small circle--white"></i>
+                <div>https://github.com<br />/HungNguyenThac</div>
+              </li>
+              <li class="flex margin-bottom">
+                <i class="fa fa-mobile circle circle--small circle--white"></i>
+                <div>(+84) 965882467.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End .module #2 -->
+        <div class="module module--progress">
+          <h3 class="module__title">
+            <i class="fa fa-graduation-cap circle circle--medium"></i>
+            <span>My Skills</span>
+          </h3>
+          <div class="module__content">
+            <ul>
+              <li class="flex">
+                <i
+                  class="fas fa-fist-raised circle circle--small circle--white"
+                ></i>
+                <div class="flex--1">
+                  <span>TỰ HỌC / NÂNG CAO KỸ NĂNG</span>
+                  <span class="progress-bar"
+                    ><span style="width: 95%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fab fa-html5 circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>HTML / CSS / JQUERY</span>
+                  <span class="progress-bar"
+                    ><span style="width: 80%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-code circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>JavaScript </span>
+                  <span class="progress-bar"
+                    ><span style="width: 80%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-code circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>TypeScript</span>
+                  <span class="progress-bar"
+                    ><span style="width: 65%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fab fa-react circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>ReactJS</span>
+                  <span class="progress-bar"
+                    ><span style="width: 70%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fab fa-react circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>Redux / Redux Tookit / Redux Saga</span>
+                  <span class="progress-bar"
+                    ><span style="width: 70%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fa fa-globe circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>Web Design</span>
+                  <span class="progress-bar"
+                    ><span style="width: 80%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fab fa-chrome circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>Front-end</span>
+                  <span class="progress-bar"
+                    ><span style="width: 80%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fas fa-server circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>Back-end</span>
+                  <span class="progress-bar"
+                    ><span style="width: 65%"></span
+                  ></span>
+                </div>
+              </li>
+              <li class="flex">
+                <i class="fab fa-github circle circle--small circle--white"></i>
+                <div class="flex--1">
+                  <span>GitHub / GitLab</span>
+                  <span class="progress-bar"
+                    ><span style="width: 75%"></span
+                  ></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End .module #3 -->
+      </div>
+      <!-- End .sidebar -->
+      <div class="content">
+        <div class="section">
+          <h2 class="section__title">
+            <i class="fas fa-school circle circle--large"></i>
+            <span>Education</span>
+          </h2>
+          <div class="section__content">
+            <div class="module">
+              <h3 class="module__title">Trường cao đẳng y tế Hà Nội.</h3>
+              <div class="module__meta">
+                <span><i class="fas fa-book-reader"></i>09/2015</span>
+                <span><i class="fas fa-graduation-cap"></i>09/2018</span>
+              </div>
+              <div class="module__content">
+                <p>Điểm tổng kết: 7,82đ.</p>
+                <p>Đã từng đạt học bổng.</p>
+              </div>
+            </div>
+            <!-- End .module #4 -->
+          </div>
+          <!-- End .section #1 -->
+
+          <div class="section">
+            <h2 class="section__title">
+              <i class="fa fa-briefcase circle circle--large"></i>
+              <span>Work Experience</span>
+            </h2>
+            <div class="section__content">
+              <div class="module">
+                <h3 class="module__title">Mern Stack</h3>
+                <div class="module__meta">
+                  <span><i class="fa fa-building-o"></i>Nodemy Company</span>
+                  <span
+                    ><i class="fa fa-calendar"></i>01 January 2021 -
+                    Current</span
+                  >
+                </div>
+              </div>
+              <div class="module">
+                <h3 class="module__title">My Skills:</h3>
+                <div class="module__content">
+                  <h4>Front-end:</h4>
+                  <p>
+                    HTML, CSS, JAVASCRIPT, TYPESCRIPT(đã tìm hiểu), JQUERY,
+                    AJAX, AXIOS, FETCH, DOM EVENT, RESPONSIVE, JSON, REACTJS,
+                    REACT-ROUTER-DOM, LAZYLOAD, REACT-HOOK, REDUX,
+                    REDUX-PERSIST, REDUX-TOOLKIT, REDUX-SAGA ,FIREBASE
+                    AUTHEN,...
+                  </p>
+                  <h4>Back-end:</h4>
+                  <p>
+                    NODEJS, MVC, STRAPI, EXPRESSJS, MONGODB, MONGODB ATLAS,
+                    MONGOOSE, JSON WEB TOKEN, BCRYPT, COOKIES PARSER, CORS,
+                    MIDDLEWARE,...
+                  </p>
+                  <h4>Thư viện UI:</h4>
+                  <p>
+                    BOOTSTRAP, FONTAWESOME, MATERIAL-UI, ANTD-DESIGN,
+                    REACT-SLICK, REDUX-FORM, REDUX-SELECT,...
+                  </p>
+                </div>
+              </div>
+              <!-- End .module #8 -->
+            </div>
+            <!-- End .section__content -->
+          </div>
+          <!-- End .section #2 -->
+
+          <div class="section">
+            <h2 class="section__title">
+              <i class="fa fa-briefcase circle circle--large"></i>
+              <span>My Project</span>
+            </h2>
+            <div class="section__content">
+              <div class="module">
+                <h3 class="module__title">
+                  Tên dự án:
+                  <a
+                    href="https://boiling-everglades-54609.herokuapp.com/"
+                    class="name__project"
+                    target="_blank"
+                    >The Tuxedo</a
+                  >
+                </h3>
+                <div class="module__content">
+                  <p>Số người tham gia: 1 người.</p>
+                  <p>Thời gian hoàn thành: 1 tháng.</p>
+                  <p>
+                    Link:
+                    <a
+                      class="name__project"
+                      href="https://boiling-everglades-54609.herokuapp.com/"
+                      >https://boiling-everglades-54609.herokuapp.com/</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <!-- End .module #8 -->
+            </div>
+            <hr />
+            <div class="section__content">
+              <div class="module">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="module__title">Công nghệ sử dụng:</h3>
+                    <div class="module__content">
+                      <ul>
+                        * Frontend
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.javascript.com/"
+                          >
+                            - JavaScript</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://reactjs.org/"
+                          >
+                            - ReactJS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://reactjs.org/docs/hooks-intro.html"
+                          >
+                            - React Hook</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://reactrouter.com/web/guides/quick-start"
+                          >
+                            - React-Router-Dom</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://redux.js.org/"
+                          >
+                            - Redux</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://react-slick.neostack.com/"
+                          >
+                            - React-slick</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/axios"
+                            >- axios</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://ant.design/components/grid/"
+                          >
+                            - Antd (Response)</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://github.com/firebase/firebaseui-web-react"
+                          >
+                            - React-FirebaseUI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://sass-lang.com/"
+                          >
+                            - SASS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/query-string"
+                          >
+                            - Query String</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/uuid"
+                          >
+                            - UUID</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://fontawesome.com/v6.0/icons"
+                          >
+                            - Fontawesome</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://fontawesome.com/v6.0/icons"
+                          >
+                            - Material-UI</a
+                          >
+                        </li>
+                      </ul>
+                      <hr />
+                      <ul>
+                        * Back-end
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://nodejs.org/en/docs/"
+                          >
+                            - NodeJS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://strapi.io"
+                          >
+                            - Strapi</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://expressjs.com"
+                          >
+                            - ExpressJS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.mongodb.com"
+                          >
+                            - MongoDB / MongoDB Atlas</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/mongoose"
+                          >
+                            - Mongoose</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/jsonwebtoken"
+                          >
+                            - JSON WEB TOKEN</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/bcrypt"
+                          >
+                            - Bcrypt</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/cookie-parser"
+                          >
+                            - Cookies Parser</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="css-link"
+                            target="_blank"
+                            href="https://www.npmjs.com/package/cors"
+                          >
+                            - Cors</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <h3 class="module__title">Tính năng:</h3>
+                    <div class="module__content">
+                      <ul>
+                        <li>- Giao diện website</li>
+                        <li>- Lazyload</li>
+                        <li>- Tìm kiếm</li>
+                        <li>- Phân loại sản phẩm</li>
+                        <li>- Lọc sản phẩm</li>
+                        <li>- Sắp xếp sản phẩm</li>
+                        <li>- Phân trang</li>
+                        <li>- Xem chi tiết sản phẩm</li>
+                        <li>- Chọn size</li>
+                        <li>- Chọn số lượng</li>
+                        <li>- Thêm giỏ hàng</li>
+                        <li>- Mua ngay</li>
+                        <li>- Thay đổi giỏ hàng(số lượng, xóa sản phẩm)</li>
+                        <li>- Đặt hàng không cần đăng nhập</li>
+                        <li>- Đăng nhập bằng tài khoản đăng ký</li>
+                        <li>- Đăng nhập với Google Auth</li>
+                        <li>- Đăng nhập với Facebook Auth</li>
+                        <li>- Cập nhật, thay đổi thông tin người dùng</li>
+                        <li>- Thêm, sửa, xóa địa chỉ người dùng</li>
+                        <li>- Đổi mật khẩu</li>
+                        <li>- Xem đơn hàng đã mua</li>
+                        <li>- Xem đơn hàng đã hoàn thành</li>
+                        <li>- Đăng Xuất</li>
+                        <li>- Response</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End .section #3 -->
+          </div>
+          <!-- End .content -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
