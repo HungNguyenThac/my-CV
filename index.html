@@ -114,6 +114,13 @@
         font: inherit;
         vertical-align: baseline;
       }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+      }
       /* HTML5 display-role reset for older browsers */
       article,
       aside,
@@ -369,27 +376,36 @@
                 <i
                   class="fa fa-map-marker circle circle--small circle--white"
                 ></i>
-                <div>Đình Xuyên - Gia Lâm - Hà Nội.</div>
+                <div>Gia Lâm - Hà Nội.</div>
               </li>
               <li class="flex margin-bottom">
-                <i
-                  class="fa fa-envelope circle circle--small circle--white"
-                ></i>
-                <div>nthachung@gmail.com</div>
+                <a href="">
+                  <i
+                    class="fa fa-envelope circle circle--small circle--white"
+                  ></i>
+                  <a href="mailto:nthachung@gmail.com">nthachung@gmail.com</a>
+                </a>
               </li>
               <li class="flex margin-bottom">
                 <i
                   class="fab fa-facebook circle circle--small circle--white"
                 ></i>
-                <div>https://www.facebook.com<br />/HgNguyen19.4.96/</div>
+                <a
+                  href="https://www.facebook.com/HgNguyen19.4.96/"
+                  target="_blank"
+                >
+                  https://www.facebook.com/HgNguyen19.4.96/
+                </a>
               </li>
               <li class="flex margin-bottom">
                 <i class="fab fa-github circle circle--small circle--white"></i>
-                <div>https://github.com<br />/HungNguyenThac</div>
+                <a href="https://github.com/HungNguyenThac" target="_blank"
+                  >https://github.com/HungNguyenThac</a
+                >
               </li>
               <li class="flex margin-bottom">
                 <i class="fa fa-mobile circle circle--small circle--white"></i>
-                <div>(+84) 965882467.</div>
+                <a href="tel:+84965882467">0965882467</a>
               </li>
             </ul>
           </div>
@@ -403,95 +419,45 @@
           <div class="module__content">
             <ul>
               <li class="flex">
-                <i
-                  class="fas fa-fist-raised circle circle--small circle--white"
-                ></i>
-                <div class="flex--1">
-                  <span>TỰ HỌC / NÂNG CAO KỸ NĂNG</span>
-                  <span class="progress-bar"
-                    ><span style="width: 95%"></span
-                  ></span>
-                </div>
-              </li>
-              <li class="flex">
                 <i class="fab fa-html5 circle circle--small circle--white"></i>
                 <div class="flex--1">
-                  <span>HTML / CSS / JQUERY</span>
-                  <span class="progress-bar"
-                    ><span style="width: 80%"></span
-                  ></span>
+                  <span>HTML / CSS</span>
                 </div>
               </li>
               <li class="flex">
                 <i class="fas fa-code circle circle--small circle--white"></i>
                 <div class="flex--1">
-                  <span>JavaScript </span>
-                  <span class="progress-bar"
-                    ><span style="width: 80%"></span
-                  ></span>
-                </div>
-              </li>
-              <li class="flex">
-                <i class="fas fa-code circle circle--small circle--white"></i>
-                <div class="flex--1">
-                  <span>TypeScript</span>
-                  <span class="progress-bar"
-                    ><span style="width: 65%"></span
-                  ></span>
+                  <span>JavaScript/TypeScript </span>
                 </div>
               </li>
               <li class="flex">
                 <i class="fab fa-react circle circle--small circle--white"></i>
                 <div class="flex--1">
-                  <span>ReactJS</span>
-                  <span class="progress-bar"
-                    ><span style="width: 70%"></span
-                  ></span>
-                </div>
-              </li>
-              <li class="flex">
-                <i class="fab fa-react circle circle--small circle--white"></i>
-                <div class="flex--1">
-                  <span>Redux / Redux Tookit / Redux Saga</span>
-                  <span class="progress-bar"
-                    ><span style="width: 70%"></span
-                  ></span>
+                  <span>ReactJS / Redux / Redux Tookit / Redux Saga</span>
                 </div>
               </li>
               <li class="flex">
                 <i class="fa fa-globe circle circle--small circle--white"></i>
                 <div class="flex--1">
-                  <span>Web Design</span>
-                  <span class="progress-bar"
-                    ><span style="width: 80%"></span
-                  ></span>
+                  <span>Angular / Rxjs / Ngrx</span>
                 </div>
               </li>
               <li class="flex">
                 <i class="fab fa-chrome circle circle--small circle--white"></i>
                 <div class="flex--1">
-                  <span>Front-end</span>
-                  <span class="progress-bar"
-                    ><span style="width: 80%"></span
-                  ></span>
+                  <span>Vue / VueX / Veu router</span>
                 </div>
               </li>
               <li class="flex">
                 <i class="fas fa-server circle circle--small circle--white"></i>
                 <div class="flex--1">
-                  <span>Back-end</span>
-                  <span class="progress-bar"
-                    ><span style="width: 65%"></span
-                  ></span>
+                  <span>NodeJS / ExpressJS / MongoDB</span>
                 </div>
               </li>
               <li class="flex">
                 <i class="fab fa-github circle circle--small circle--white"></i>
                 <div class="flex--1">
                   <span>GitHub / GitLab</span>
-                  <span class="progress-bar"
-                    ><span style="width: 75%"></span
-                  ></span>
                 </div>
               </li>
             </ul>
@@ -501,363 +467,45 @@
       </div>
       <!-- End .sidebar -->
       <div class="content">
+        <!-- End .section #1 -->
+
         <div class="section">
           <h2 class="section__title">
-            <i class="fas fa-school circle circle--large"></i>
-            <span>Education</span>
+            <i class="fa fa-briefcase circle circle--large"></i>
+            <span>Work Experience</span>
           </h2>
           <div class="section__content">
             <div class="module">
-              <h3 class="module__title">Trường cao đẳng y tế Hà Nội.</h3>
+              <h3 class="module__title">Learn Mern Stack</h3>
               <div class="module__meta">
-                <span><i class="fas fa-book-reader"></i>09/2015</span>
-                <span><i class="fas fa-graduation-cap"></i>09/2018</span>
+                <span><i class="fa fa-building-o"></i>Nodemy Company</span>
+                <span
+                  ><i class="fa fa-calendar"></i> January/2021 - June/2021
+                </span>
               </div>
+            </div>
+            <div class="module">
+              <h3 class="module__title">Developer</h3>
+              <div class="module__meta">
+                <span
+                  ><i class="fa fa-building-o"></i>Lien Viet Technology</span
+                >
+                <span
+                  ><i class="fa fa-calendar"></i> June/2021 - March/2022</span
+                >
+              </div>
+            </div>
+            <div class="module">
+              <h3 class="module__title">My Skills:</h3>
               <div class="module__content">
-                <p>Điểm tổng kết: 7,82đ.</p>
-                <p>Đã từng đạt học bổng.</p>
+                <h4>Front-end:</h4>
+                <p>
+                  HTML, CSS, RESPONSIVE, JAVASCRIPT, TYPESCRIPT, REACTJS, REDUX,
+                  ANGULAR, RXJS, NGRX, VUE, VUE X, VUE ROUTER...
+                </p>
               </div>
             </div>
-            <!-- End .module #4 -->
           </div>
-          <!-- End .section #1 -->
-
-          <div class="section">
-            <h2 class="section__title">
-              <i class="fa fa-briefcase circle circle--large"></i>
-              <span>Work Experience</span>
-            </h2>
-            <div class="section__content">
-              <div class="module">
-                <h3 class="module__title">Mern Stack</h3>
-                <div class="module__meta">
-                  <span><i class="fa fa-building-o"></i>Nodemy Company</span>
-                  <span
-                    ><i class="fa fa-calendar"></i>01 January 2021 -
-                    Current</span
-                  >
-                </div>
-              </div>
-              <div class="module">
-                <h3 class="module__title">My Skills:</h3>
-                <div class="module__content">
-                  <h4>Front-end:</h4>
-                  <p>
-                    HTML, CSS, JAVASCRIPT, TYPESCRIPT(đã tìm hiểu), JQUERY,
-                    AJAX, AXIOS, FETCH, DOM EVENT, RESPONSIVE, JSON, REACTJS,
-                    REACT-ROUTER-DOM, LAZYLOAD, REACT-HOOK, REDUX,
-                    REDUX-PERSIST, REDUX-TOOLKIT, REDUX-SAGA ,FIREBASE
-                    AUTHEN,...
-                  </p>
-                  <h4>Back-end:</h4>
-                  <p>
-                    NODEJS, MVC, STRAPI, EXPRESSJS, MONGODB, MONGODB ATLAS,
-                    MONGOOSE, JSON WEB TOKEN, BCRYPT, COOKIES PARSER, CORS,
-                    MIDDLEWARE,...
-                  </p>
-                  <h4>Thư viện UI:</h4>
-                  <p>
-                    BOOTSTRAP, FONTAWESOME, MATERIAL-UI, ANTD-DESIGN,
-                    REACT-SLICK, REDUX-FORM, REDUX-SELECT,...
-                  </p>
-                </div>
-              </div>
-              <!-- End .module #8 -->
-            </div>
-            <!-- End .section__content -->
-          </div>
-          <!-- End .section #2 -->
-
-          <div class="section">
-            <h2 class="section__title">
-              <i class="fa fa-briefcase circle circle--large"></i>
-              <span>My Project</span>
-            </h2>
-            <div class="section__content">
-              <div class="module">
-                <h3 class="module__title">
-                  Tên dự án:
-                  <a
-                    href="https://boiling-everglades-54609.herokuapp.com/"
-                    class="name__project"
-                    target="_blank"
-                    >The Tuxedo</a
-                  >
-                </h3>
-                <div class="module__content">
-                  <p>Số người tham gia: 1 người.</p>
-                  <p>Thời gian hoàn thành: 1 tháng.</p>
-                  <p>
-                    Link:
-                    <a
-                      class="name__project"
-                      href="https://boiling-everglades-54609.herokuapp.com/"
-                      >https://boiling-everglades-54609.herokuapp.com/</a
-                    >
-                  </p>
-                </div>
-              </div>
-              <!-- End .module #8 -->
-            </div>
-            <hr />
-            <div class="section__content">
-              <div class="module">
-                <div class="row">
-                  <div class="col">
-                    <h3 class="module__title">Công nghệ sử dụng:</h3>
-                    <div class="module__content">
-                      <ul>
-                        * Frontend
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.javascript.com/"
-                          >
-                            - JavaScript</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://reactjs.org/"
-                          >
-                            - ReactJS</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://reactjs.org/docs/hooks-intro.html"
-                          >
-                            - React Hook</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://reactrouter.com/web/guides/quick-start"
-                          >
-                            - React-Router-Dom</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://redux.js.org/"
-                          >
-                            - Redux</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://react-slick.neostack.com/"
-                          >
-                            - React-slick</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/axios"
-                            >- axios</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://ant.design/components/grid/"
-                          >
-                            - Antd (Response)</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://github.com/firebase/firebaseui-web-react"
-                          >
-                            - React-FirebaseUI</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://sass-lang.com/"
-                          >
-                            - SASS</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/query-string"
-                          >
-                            - Query String</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/uuid"
-                          >
-                            - UUID</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://fontawesome.com/v6.0/icons"
-                          >
-                            - Fontawesome</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://fontawesome.com/v6.0/icons"
-                          >
-                            - Material-UI</a
-                          >
-                        </li>
-                      </ul>
-                      <hr />
-                      <ul>
-                        * Back-end
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://nodejs.org/en/docs/"
-                          >
-                            - NodeJS</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://strapi.io"
-                          >
-                            - Strapi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://expressjs.com"
-                          >
-                            - ExpressJS</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.mongodb.com"
-                          >
-                            - MongoDB / MongoDB Atlas</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/mongoose"
-                          >
-                            - Mongoose</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/jsonwebtoken"
-                          >
-                            - JSON WEB TOKEN</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/bcrypt"
-                          >
-                            - Bcrypt</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/cookie-parser"
-                          >
-                            - Cookies Parser</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="css-link"
-                            target="_blank"
-                            href="https://www.npmjs.com/package/cors"
-                          >
-                            - Cors</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <h3 class="module__title">Tính năng:</h3>
-                    <div class="module__content">
-                      <ul>
-                        <li>- Giao diện website</li>
-                        <li>- Lazyload</li>
-                        <li>- Tìm kiếm</li>
-                        <li>- Phân loại sản phẩm</li>
-                        <li>- Lọc sản phẩm</li>
-                        <li>- Sắp xếp sản phẩm</li>
-                        <li>- Phân trang</li>
-                        <li>- Xem chi tiết sản phẩm</li>
-                        <li>- Chọn size</li>
-                        <li>- Chọn số lượng</li>
-                        <li>- Thêm giỏ hàng</li>
-                        <li>- Mua ngay</li>
-                        <li>- Thay đổi giỏ hàng(số lượng, xóa sản phẩm)</li>
-                        <li>- Đặt hàng không cần đăng nhập</li>
-                        <li>- Đăng nhập bằng tài khoản đăng ký</li>
-                        <li>- Đăng nhập với Google Auth</li>
-                        <li>- Đăng nhập với Facebook Auth</li>
-                        <li>- Cập nhật, thay đổi thông tin người dùng</li>
-                        <li>- Thêm, sửa, xóa địa chỉ người dùng</li>
-                        <li>- Đổi mật khẩu</li>
-                        <li>- Xem đơn hàng đã mua</li>
-                        <li>- Xem đơn hàng đã hoàn thành</li>
-                        <li>- Đăng Xuất</li>
-                        <li>- Response</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End .section #3 -->
-          </div>
-          <!-- End .content -->
         </div>
       </div>
     </div>
