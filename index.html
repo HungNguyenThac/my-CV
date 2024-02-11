@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ThacHung's CV</title>
+    <!-- Load font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Load google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Load main stylesheet -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      p,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        color: inherit;
+        text-decoration: underline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1.525;
+        font-size: 26px !important;
+        font-weight: 500;
+        color: #263238;
+        font-family: "Montserrat", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      ol,
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      img {
+        vertical-align: middle;
+        max-width: 100%;
+      }
+
+      /* Helper Class */
+      .flex {
+        display: flex;
+      }
+
+      .flex .flex--1 {
+        flex: 1;
+      }
+      .flex-center {
+        display: flex;
+        align-items: center;
+      }
+
+      .horizontal__line {
+        background-color: #263238;
+        color: #263238;
+        height: 1px;
+        width: 100%;
+        margin-top: 1px;
+      }
+
+      /* Global Layout */
+      .wrapper {
+        max-width: 75%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 64px 80px;
+      }
+
+      .title1 {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.3;
+        text-align: center;
+      }
+      .title2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .sub__title {
+        font-size: 20px;
+        color: #8a8f92;
+      }
+
+      /* Section */
+      .section:not(.last-child) {
+        margin-bottom: 50px;
+      }
+      .project {
+        margin-left: 80px;
+        margin-top: 20px;
+      }
+      .tasks {
+        margin: 12px 0;
+        margin-left: 64px;
+        line-height: 1.2;
+      }
+
+      .project .project__content {
+        padding-left: 96px;
+      }
+      .content .module:not(:first-child) {
+        margin-top: 64px;
+      }
+      .content .module__title {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- INFOMATION -->
+
+      <!-- ABOUT ME -->
+      <section>
+        <h1 class="title1">HUNG NGUYEN THAC</h1>
+        <h1 class="title1">Front End Developer</h1>
+      </section>
+      <section class="flex-center justify-content-around mt-2">
+        <div style="max-width: 70%">
+          Front End Developer with 4 years of experience working with JavaScript/Typescript,
+          HTML/CSS, using ReactJs/Angular framework to deliver exceptional customer experiences.
+        </div>
+        <div style="max-width: 30%">
+          <p style="text-align: end">
+            Gia Lam, Ha Noi
+            <a href="mailto:nthachung@gmail.com">nthachung@gmail.com</a>
+            <a href="tel:+84965882467">0965882467</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT ME -->
+
+      <!-- EXPERIENCE -->
+      <section class="mt-5">
+        <!-- TITLE -->
+        <section>
+          <h1 class="title2" style="text-align: left; line-height: 1">WORK EXPERIENCE</h1>
+          <p class="horizontal__line"></p>
+        </section>
+
+        <!-- PROJECTS -->
+        <ul>
+          <!-- IRIS SKYNET -->
+          <li class="project">
+            <div class="flex-center" style="justify-content: space-between">
+              <div class="flex-center">
+                <span class="title2">IRIS SECURITY —</span>&nbsp;
+                <span class="sub__title"> Tam Trinh, Hoang Mai, Ha Noi</span>
+              </div>
+              <span class="sub__title">5/2022 - 10/2023</span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Project:</span>
+              <span class="sub__title" style="color: black"> &nbsp; IRIS SKYNET</span>
+            </div>
+            <div class="flex">
+              <p class="sub__title" style="color: black">
+                <quotes class="sub__title">About project: </quotes>
+                Project provides many features in the field of cyber security and information
+                security, such as: dashboard, monitoring, alerting, querying, ticketing,...
+              </p>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Techs:</span>
+              <span class="sub__title" style="color: black">
+                &nbsp; ReactJS/ JavaScript/ Recoil/ Material UI...
+              </span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Members:</span>
+              <span class="sub__title" style="color: black"> &nbsp; 1</span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">My roles:</span>
+            </div>
+            <p>Responsible for the company's main project</p>
+            <p>Designed, and developed many features such as:</p>
+            <ul>
+              <li class="tasks">
+                Base project, components reusable, rich editor,... base on Material UI
+              </li>
+              <li class="tasks">Dynamic dashboard using widgets, text boxes,...</li>
+              <li class="tasks">
+                Build SQL editor, writing clause to retrieve data, virtualize data in table, chart
+                (bar, pie, line, scatter, bubble,...), map choropleth, map markers, sunburst
+                sequence,...
+              </li>
+              <li class="tasks">
+                Real-time attacks map, handle curve, attack infomation, risk level, optimize
+                performance,...
+              </li>
+              <li class="tasks">Ticketing system: assigne task, status, timeline,...</li>
+              <li class="tasks">Automatic response system</li>
+              <li class="tasks">etc...</li>
+            </ul>
+            <p>Maintain, improve available features</p>
+            <p>Collaborated with the deployment team to bring products to customers</p>
+          </li>
+
+          <!-- MONEX OPERATOR -->
+          <li class="project">
+            <div class="flex-center" style="justify-content: space-between">
+              <div class="flex-center">
+                <span class="title2">MONEX —</span>&nbsp;
+                <span class="sub__title">De La Thanh, Dong Da, Ha Noi</span>
+              </div>
+              <span class="sub__title">04/2021 - 04/2022</span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Project:</span>
+              <span class="sub__title" style="color: black"> &nbsp; MONEX OPERATOR</span>
+            </div>
+            <div style="display: flex; align-items: center">
+              <p class="sub__title" style="color: black">
+                <quotes class="sub__title">About project: </quotes> Project offers solution for
+                managing, monitoring, evaluating, processing payments,... for gym facilities.
+              </p>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Techs:</span>
+              <span class="sub__title" style="color: black">
+                &nbsp; Angular 12/ Ngrx/ Angular Material...
+              </span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Members:</span>
+              <span class="sub__title" style="color: black"> &nbsp; 2</span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">My roles:</span>
+            </div>
+            <p>Designed, and developed many features.</p>
+            <p>Exchange, contribute opinions to find a solution.</p>
+            <p>Implement requirement following coding convention</p>
+            <p>Collaborate with other team members to improve performance,...</p>
+          </li>
+
+          <!-- GAIA -->
+          <li class="project">
+            <div class="flex-center" style="justify-content: space-between">
+              <div class="flex-center">
+                <span class="title2">LIENVIETTECH —</span>&nbsp;
+                <span class="sub__title">Tong Dan, Hoan Kiem, Ha Noi</span>
+              </div>
+              <span class="sub__title">11/2019 - 03/2021</span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Project:</span>
+              <span class="sub__title" style="color: black"> &nbsp; GAIA</span>
+            </div>
+            <div class="flex-center">
+              <p class="sub__title" style="color: black">
+                <quotes class="sub__title">About project:</quotes>
+                Project provides comprehensive solution for managing customer information, customer
+                transactions,...
+              </p>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Techs:</span>
+              <span class="sub__title" style="color: black">
+                &nbsp; Angular 10/ Ngrx/ Angular Material...
+              </span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">Members:</span>
+              <span class="sub__title" style="color: black"> &nbsp; 3</span>
+            </div>
+            <div class="flex-center">
+              <span class="sub__title">My roles:</span>
+            </div>
+            <p>Designed, and developed many features.</p>
+            <p>Exchange, contribute opinions to find a solution.</p>
+            <p>Implement requirement following coding convention</p>
+            <p>Collaborate with other team members to improve performance,...</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- TECHNICAL SKILL -->
+      <section class="mt-5">
+        <section>
+          <h1 class="title2" style="text-align: left; line-height: 1">TECHNICAL SKILLS:</h1>
+          <p class="horizontal__line"></p>
+        </section>
+
+        <ul>
+          <li class="tasks" style="margin-left: 80px">
+            I became a developer in mid-2019 and have been working ever since.
+          </li>
+          <li class="tasks" style="margin-left: 80px">Strong proficiency in ReactJS and Angular</li>
+          <li class="tasks" style="margin-left: 80px">JavaScript, TypeScript, HTML5, CSS3</li>
+          <li class="tasks" style="margin-left: 80px">State management with Redux and NgRx</li>
+          <li class="tasks" style="margin-left: 80px">RESTful API integration</li>
+          <li class="tasks" style="margin-left: 80px">GitHub/GitLab for version control</li>
+          <li class="tasks" style="margin-left: 80px">Docker for deploy</li>
+          <li class="tasks" style="margin-left: 80px">etc...</li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION -->
+      <!-- <section class="mt-5">
+        <section>
+          <h1 class="title2" style="text-align: left; line-height: 1">EDUCATION</h1>
+          <p class="horizontal__line"></p>
+        </section>
+        <ul>
+          <li class="tasks" style="margin-left: 80px">
+            I became a developer in mid-2019 and have been working ever since.
+          </li>
+        </ul>
+      </section> -->
+    </div>
+  </body>
+</html>
